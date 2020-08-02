@@ -9,13 +9,24 @@
     font-style: normal;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+
     font-size: 10px;
     background: rgb(83, 149, 230);
 }
 
 a {
     text-decoration: none;
+}
+
+.main-header {
+    flex: 0 1 auto;
 }
 
 .logo-text {
@@ -25,6 +36,12 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-size: 37px;
+}
+
+.main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .thumbnail-item + .thumbnail-item {
@@ -39,6 +56,9 @@ a {
 }
 
 .thumbnail-list {
+    flex: 0 1 auto;
+    order: 2;
+    display: flex;
     list-style: none;
     padding: 0;
 
@@ -60,6 +80,10 @@ a {
     color: rgb(202, 238, 255);
 
     font-size: 18px;
+}
+
+.detail-image-container {
+    flex: 1 1 auto;
 }
 
 .detail-image {
